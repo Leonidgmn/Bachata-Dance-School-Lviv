@@ -14,7 +14,7 @@
 .grid-name {
   display: grid;
   grid-template-columns: [first] 20px [line2] 135px;
-  margin: 30px 0 100px 30px;
+  margin: 30px;
   font-size: 40px;
   color: var(--color-smoke);
 }
@@ -24,6 +24,7 @@
 }
 
 .modal-btn {
+  display: inline-block;
   background-color: var(--color-modal-btn);
   color: var(--color-white);
   padding: 12px 30px;
