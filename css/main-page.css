@@ -4,8 +4,6 @@
   background-position: 10%;
   background-repeat: no-repeat;
   height: 100vh;
-  flex-direction: column;
-  
 }
 
 .title-bdsl {
@@ -13,14 +11,12 @@
   padding: 30px;
 }
 
-
-
 .grid-name {
   display: grid;
   grid-template-columns: [first] 20px [line2] 135px;
   margin: 30px 0 100px 30px;
   font-size: 40px;
-  color:  var(--color-smoke);
+  color: var(--color-smoke);
 }
 
 .first-leter {
@@ -41,10 +37,13 @@
     background-image: url("../img/main-foto.jpg");
     background-position: center;
     background-size: auto 500px;
-    
   }
   .title-bdsl,
   .grid-name {
     display: none;
+  }
+
+  .modal-btn {
+    margin-top: 100px;
   }
 }
