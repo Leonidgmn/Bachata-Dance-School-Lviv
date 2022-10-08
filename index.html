@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <title>BDSL</title>
   </head>
   <body>
@@ -16,20 +22,20 @@
       <nav class="header__navigation container">
         <div class="navigation__logo">
           <a href="#">
-            <img class="logo__img" src="img/bdsl-logo.jpg" alt="BDSL-logo">
+            <img class="logo__img" src="img/bdsl-logo.jpg" alt="BDSL-logo" />
           </a>
-        </div>
-        <div class="navigation__burger-menu-icon">
-          <span class="burger__line line-top"></span>
-          <span class="burger__line line-middle"></span>
-          <span class="burger__line line-bottom"></span>
-        </div>
+          <div class="navigation__burger-menu-button burger-menu-button">
+            <span class="burger__line line-top"></span>
+            <span class="burger__line line-middle"></span>
+            <span class="burger__line line-bottom"></span>
+          </div>
+        </div>        
         <div class="navigation__menu">
-          <a class="menu" href="#">ТАНЦІ</a>
-          <a class="menu" href="#">РОЗКЛАД</a>
-          <a class="menu" href="#">ВИКЛАДАЧІ</a>
-          <a class="menu" href="#">НОВИНИ</a>
-          <a class="menu" href="#">КОНТАКТИ</a>
+          <a class="menu" href="dance">ТАНЦІ</a>
+          <a class="menu" href="shedule">РОЗКЛАД</a>
+          <a class="menu" href="teams">ВИКЛАДАЧІ</a>
+          <a class="menu" href="news">НОВИНИ</a>
+          <a class="menu" href="contact">КОНТАКТИ</a>
         </div>
       </nav>
     </header>
@@ -51,14 +57,21 @@
     </main>
     <footer class="footer">
       <div class="footer__social-list">
-        <a href="https://t.me/bdslviv/" target="_blank"><i class="bi bi-telegram"></i></a>
-        <a href="https://www.instagram.com/bdslviv/" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.facebook.com/BDSLviv" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://t.me/bdslviv/" target="_blank"
+          ><i class="bi bi-telegram"></i
+        ></a>
+        <a href="https://www.instagram.com/bdslviv/" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/BDSLviv" target="_blank"
+          ><i class="bi bi-facebook"></i
+        ></a>
       </div>
     </footer>
+    <script src="js/burger-menu.js"></script>
   </body>
-  </html>
-  
-  <!-- <img class="title__mobile-foto main-foto" src="img/mobile-main-foto.jpg" alt="Team bdsl">
+</html>
+
+<!-- <img class="title__mobile-foto main-foto" src="img/mobile-main-foto.jpg" alt="Team bdsl">
   <img class="title__main-foto main-foto" src="img/main-foto.jpg" alt="Team bdsl"> -->
-  <!-- <a href="#" class="modall-btn">ЗАПИСАТИСЯ</a> -->
+<!-- <a href="#" class="modall-btn">ЗАПИСАТИСЯ</a> -->
