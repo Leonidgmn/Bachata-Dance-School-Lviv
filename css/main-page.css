@@ -1,12 +1,20 @@
 .main__title {
-  background-image: url("../img/mobile-main-foto.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/mia-ihor-white.jpg");
   background-size: cover;
-  background-position: 10%;
+  /* background-position: 10%; */
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh;
 }
 
-.title-bdsl {
+.title-bdsl{
+  justify-content: flex-start;
+}
+
+.bdsl {
   color: var(--color-white);
   padding: 30px;
 }
@@ -28,16 +36,28 @@
   background-color: var(--color-modal-btn);
   color: var(--color-white);
   padding: 12px 30px;
-  margin: 100px 0 0 30px;
-  justify-content: center;
-  align-items: center;
+  margin: 0 0 25px 0;
+
+}
+
+@media (min-width: 425px) {
+  .main__title {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__title {
+    height: 100vh;
+    background-position: 10% 10%;
+  }
 }
 
 @media (min-width: 991px) {
   .main__title {
-    background-image: url("../img/main-foto.jpg");
-    background-position: center;
-    background-size: auto 500px;
+    background-image: url("../img/mia-ihor.jpg");
+    /* background-position: center;
+    background-size: auto 900px; */
   }
   .title-bdsl,
   .grid-name {

@@ -10,7 +10,7 @@
 }
 
 .bi {
-  margin: 0 10px;
+  padding: 5px;
   font-size: 25px;
   color: var(--color-menu);
 }

@@ -45,7 +45,6 @@ body.lock {
 }
 
 .burger__line {
-  
   height: 2px;
   background-color: var(--color-menu);
   transition: 300ms;
@@ -66,7 +65,6 @@ body.lock {
   background-color: var(--color-background-header);
   z-index: 2;
   transition: top 0.3s ease-in 0.1s;
-  
 }
 
 .navigation__menu.active {
@@ -101,6 +99,21 @@ body.lock {
 
 .show-menu {
   transform: translateY(0);
+}
+
+span,
+::before,
+::after {
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-white);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.navigation__burger-menu-button.active {
+  transform: scale(0);
 }
 
 @media (min-width: 991px) {

@@ -1,0 +1,221 @@
+@media (max-width: 990px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .logo__img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+  section div nav .navigation-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    z-index: 5;
+    background-color: var(--color-background-header);
+  }
+  section div nav .navigation-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 12px;
+    margin: 0 20px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  section div nav .navigation-burger span,
+  section div nav .navigation-burger::before,
+  section div nav .navigation-burger::after {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-white);
+    transition: all 0.5s ease-in-out;
+  }
+  section div nav .navigation-burger span {
+    transform: scale(1);
+  }
+  section div nav .navigation-burger::before,
+  section div nav .navigation-burger::after {
+    content: " ";
+  }
+  section div nav .navigation-burger::before {
+    top: 0;
+  }
+  section div nav .navigation-burger::after {
+    bottom: 0;
+  }
+  section div nav .navigation-burger.active span {
+    transform: scale(0);
+  }
+  section div nav .navigation-burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  section div nav .navigation-burger.active::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+  }
+  header section div.container-section {
+    position: relative;
+    background-color: var(--color-background-header);
+  }
+  section div nav.navigation .navigation-wrapper {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background-header);
+    z-index: 2;
+    transition: top 0.3s ease-in;
+    padding: 15px 24px 50px 24px;
+    transition: top 0.3s ease-in 0.1s;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  section div nav.navigation .navigation-wrapper.active {
+    top: 0;
+  }
+
+  section div nav.navigation.active {
+    top: 0;
+  }
+  section div nav .navigation-pages {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    z-index: 10;
+    padding-top: 200px;
+  }
+  body
+    > header
+    > section
+    > div
+    > nav
+    > div.navigation-wrapper.active
+    > div.navigation-pages
+    > a {
+    color: var(--color-menu);
+    opacity: 0.8;
+  }
+  body
+    > header
+    > section
+    > div
+    > nav
+    > div.navigation-wrapper.active
+    > div.navigation-pages
+    > a:hover {
+    color: var(--color-white);
+  }
+
+  section div nav .navigation-pages a:hover {
+    color: var(--button-black-color);
+  }
+
+  section div nav .navigation-social {
+    position: relative;
+    min-width: 172px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+
+  section div nav .navigation-social img {
+    max-width: 28px;
+    border-radius: 0.4rem;
+  }
+}
+@media (min-width: 480px) {
+  .container-top_flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 431px;
+  }
+}
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 991px) {
+  .logo__img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+
+  section div nav .navigation-burger {
+    display: none;
+  }
+  section div nav.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    background-color: var(--color-background-header);
+  }
+
+  section div nav .navigation-pages,
+  .navigation-social {
+    display: flex;
+  }
+
+  section div .navigation .navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section div nav .navigation-pages {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-menu);
+    min-width: 480px;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+  }
+  section div nav .navigation-pages a {
+    position: relative;
+    font-size: 0.91rem;
+    color: var(--color-menu);
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.5rem;
+  }
+  section div nav .navigation-pages a:hover {
+    color: var(--color-white);
+    cursor: pointer;
+  }
+  section div nav .navigation-pages a:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 0.1rem;
+    background-color: var(--color-background-header);
+    transition: width 0.2s ease-in;
+  }
+  section div nav .navigation-pages a:hover:after {
+    width: 100%;
+  }
+}

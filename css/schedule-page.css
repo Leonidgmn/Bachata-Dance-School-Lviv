@@ -1,0 +1,101 @@
+.wrapper__schedule {
+  height: 100%;
+  background-color: var(--color-background-main-page);
+}
+
+.address__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title__select {
+  display: flex;
+  justify-content: center;
+}
+
+.address__select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__item {
+  height: 150px;
+  margin: 10px;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.address__item.first {
+  background-image: url(../img/location.jpg);
+  background-size: cover;
+}
+
+.address__name{
+    width: 100px;
+    color: var(--color-white);
+}
+
+.title__dance-name{
+    display: flex;
+    justify-content: center;
+}
+
+.dance-name__wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dance-item{
+    margin: 10px;
+}
+
+.dance__select{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dance-select__item{
+    margin: 2.5px;
+    padding: 8px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.dance-select__item:hover{
+    background-color: rgb(11, 202, 52);
+}
+
+.dance-select__item.active{
+    background-color: rgb(11, 202, 52);
+}
+
+.title__week{
+    display: flex;
+    justify-content: center;
+}
+
+.week__item{
+    padding: 10px;
+}
+
+.week__schedule{
+    margin-top: 10px;
+}
+
+.days-of__week{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: bisque;
+}
+
+.day-schadule{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
