@@ -1,5 +1,6 @@
 .wrapper__schedule {
   height: 100%;
+  padding-top: 10px;
   background-color: var(--color-background-main-page);
 }
 
@@ -92,9 +93,21 @@
     background-color: bisque;
 }
 
-.day-schadule{
+.day-schadule {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    margin-top: 10px;
+}
+
+.day__week_name {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    margin-top: 10px;
+}
+
+
+.wrapper-for-schedule{
     display: flex;
-    justify-content: space-around;
 }
 
 
