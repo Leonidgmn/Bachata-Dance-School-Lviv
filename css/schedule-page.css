@@ -95,13 +95,15 @@
 
 .day-schadule {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    place-items: center;
     margin-top: 10px;
 }
 
 .day__week_name {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    place-items: center;
     margin-top: 10px;
 }
 
@@ -110,5 +112,32 @@
     display: flex;
 }
 
+/* .level{
+    margin-left: 10px;
+}
+
+.dance-name{
+    margin-left: 10px;
+} */
+
+.icon__place__color{
+    margin: auto;
+    margin-top: 3px;
+    height: 12px;
+    width: 12px;;
+    border-radius: 50%;
+}
+
+.icon__place__color.grey{
+    background-color: gray;
+}
+
+.icon__place__color.pink{
+    background-color: pink;
+}
+
+.icon__place__color.purple{
+    background-color: purple;
+}
 
 
