@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,41 +18,292 @@
     <title>BDSL</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="header__navigation container">
-        <div class="navigation__logo">
-          <a href="#">
-            <img class="logo__img" src="img/bdsl-logo.jpg" alt="BDSL-logo" />
-          </a>
-          <div class="navigation__burger-menu-button burger-menu-button">
-            <span class="burger__line line-top"></span>
-            <span class="burger__line line-middle"></span>
-            <span class="burger__line line-bottom"></span>
-          </div>
-        </div>        
-        <div class="navigation__menu">
-          <a class="menu" href="dance">ТАНЦІ</a>
-          <a class="menu" href="shedule">РОЗКЛАД</a>
-          <a class="menu" href="teams">ВИКЛАДАЧІ</a>
-          <a class="menu" href="news">НОВИНИ</a>
-          <a class="menu" href="contact">КОНТАКТИ</a>
+    <header>
+      <section class="banner-bg banner-bg_origin">
+        <div class="container-section">
+          <nav class="navigation container">
+            <div class="navigation-logo">
+              <a href="product-card.html"
+                ><img class="logo__img" src="img/bdsl-logo.jpg" alt="BDSL-logo"
+              /></a>
+              <div class="navigation-burger"><span></span></div>
+            </div>
+            <div class="navigation-wrapper">
+              <div class="navigation-pages">
+                <a href="#" class="navigations__dance navigation__link"
+                  >ТАНЦІ</a
+                >
+                <a href="#" class="navigations__shedule navigation__link"
+                  >РОЗКЛАД</a
+                >
+                <a href="#" class="navigations__teams navigation__link"
+                  >ВИКЛАДАЧІ</a
+                >
+                <a href="#" class="navigations__news navigation__link"
+                  >НОВИНИ</a
+                >
+                <a href="#footer" class="navigations__contact navigation__link"
+                  >КОНТАКТИ</a
+                >
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </section>
     </header>
     <main class="main-page">
-      <section class="main__title">
-        <h2 class="title-bdsl">#BDSLviv</h2>
-        <div class="grid-name">
-          <div class="name first-leter">B</div>
-          <div class="name">ACHATA</div>
-          <div class="name first-leter">D</div>
-          <div class="name">ANCE</div>
-          <div class="name first-leter">S</div>
-          <div class="name">CHOOL</div>
-          <div class="name first-leter">L</div>
-          <div class="name">VIV</div>
+      <!-- <section class="main__title">
+        <div class="title-bdsl">
+          <h2 class="bdsl">#BDSLviv</h2>
+        </div> -->
+      <!-- <a href="#" class="modal-btn">ЗАПИСАТИСЯ</a> -->
+      <!-- </section> -->
+      <section class="schedule-page">
+        <div class="wrapper__schedule">
+          <div class="select-place container">
+            <h3 class="title__select">Оберіть локацію</h3>
+            <div class="address__wrapper">
+              <div class="address__select">
+                <a href="#" class="address__item first">
+                  <span class="address__name">Лемківська, 15</span>
+                </a>
+              </div>
+              <div class="address__select">
+                <a href="#" class="address__item first">
+                  <span class="address__name">Наукова, 7а</span>
+                </a>
+              </div>
+              <div class="address__select">
+                <a href="#" class="address__item first">
+                  <span class="address__name">Театральна, 15</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="#" class="modal-btn">ЗАПИСАТИСЯ</a>
+
+        <div class="wrapper__dance-choice wrapper__schedule">
+          <div class="dance-name container">
+            <h3 class="title__dance-name">Оберіть напрям</h3>
+            <div class="dance-name__wrapper">
+              <ul class="dance-item">
+                <li class="dance__select">
+                  <span class="dance-select__item active">BACHATA</span>
+                  <span class="dance-select__item">KIZOMBA</span>
+                  <span class="dance-select__item">ZOOK</span>
+                  <span class="dance-select__item">SALSA</span>
+                </li>
+              </ul>
+              <ul class="dance-item">
+                <li class="dance__select">
+                  <span class="dance-select__item">ВСІ</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper__week wrapper__schedule">
+          <div class="week__item container">
+            <h3 class="title__week">Розклад на тиждень</h3>
+            <div class="week__schedule">
+              <div class="days-of__week">
+                <h2 class="day__week">ПОНЕДІЛОК</h2>
+                <div class="day__week_name">
+                  <h5>ГОДИНА</h5>
+                  <h5>РІВЕНЬ</h5>
+                  <h5>СТИЛЬ</h5>
+                  <h5 class="location__place">ЗАЛ</h5>
+                  <h5>ВИКЛАДАЧ</h5>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">18:00 - 19:00</p>
+                  </div>
+                  <div class="level">--</div>
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color pink"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Марина</p>
+                  </div>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">19:00 - 20:00</p>
+                  </div>
+                  <div class="level">A0</div>
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color grey"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Діма&Оля</p>
+                  </div>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">20:00 - 21:00</p>
+                  </div>
+                  <div class="level">B1-B2</div>
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color grey"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Діма&Оля</p>
+                  </div>
+                </div>
+              </div>
+              <div class="days-of__week">
+                <h2 class="day__week">ВІВТОРОК</h2>
+                <div class="day__week_name">
+                  <h5>ГОДИНА</h5>
+                  <h5>РІВЕНЬ</h5>
+                  <h5>СТИЛЬ</h5>
+                  <h5 class="location__place">ЗАЛ</h5>
+                  <h5>ВИКЛАДАЧ</h5>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">18:00 - 19:00</p>
+                  </div>
+                  <div class="level">B1</div>
+
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA LADIES</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color purple"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Галя</p>
+                  </div>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">19:00 - 20:00</p>
+                  </div>
+                  <div class="level">A2</div>
+
+                  <div class="dance-style">
+                    <p class="dance-name">KIZOMBA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color pink"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Ігор&Олеся</p>
+                  </div>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">19:00 - 20:00</p>
+                  </div>
+                  <div class="level">B2</div>
+
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color grey"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Тарас&Галя</p>
+                  </div>
+                </div>
+              </div>
+              <div class="days-of__week">
+                <h2 class="day__week">СЕРЕДА</h2>
+                <div class="day__week_name">
+                  <h5>ГОДИНА</h5>
+                  <h5>РІВЕНЬ</h5>
+                  <h5>СТИЛЬ</h5>
+                  <h5 class="location__place">ЗАЛ</h5>
+                  <h5>ВИКЛАДАЧ</h5>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">18:00 - 19:00</p>
+                  </div>
+                  <div class="level">--</div>
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color pink"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Марина</p>
+                  </div>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">19:00 - 20:00</p>
+                  </div>
+                  <div class="level">A0</div>
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color grey"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Діма&Оля</p>
+                  </div>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">20:00 - 21:00</p>
+                  </div>
+                  <div class="level">B1-B2</div>
+                  <div class="dance-style">
+                    <p class="dance-name">BACHATA</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color grey"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Діма&Оля</p>
+                  </div>
+                </div>
+              </div>
+              <div class="days-of__week">
+                <h2 class="day__week">ЧЕТВЕР</h2>
+                <div class="day__week_name">
+                  <h5>ГОДИНА</h5>
+                  <h5>РІВЕНЬ</h5>
+                  <h5>СТИЛЬ</h5>
+                  <h5 class="location__place">ЗАЛ</h5>
+                  <h5>ВИКЛАДАЧ</h5>
+                </div>
+                <div class="day-schadule">
+                  <div class="hour__wrapper">
+                    <p class="hour__item">20:00 - 21:00</p>
+                  </div>
+                  <div class="level">B2</div>
+
+                  <div class="dance-style">
+                    <p class="dance-name">ZOOK</p>
+                  </div>
+                  <div class="icon_place">
+                    <div class="icon__place__color"></div>
+                  </div>
+                  <div class="dance-teacher">
+                    <p class="teacher__name">Галя&Тарас</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -68,10 +319,7 @@
         ></a>
       </div>
     </footer>
-    <script src="js/burger-menu.js"></script>
+
+    <script src="js/burger-menu1.js"></script>
   </body>
 </html>
-
-<!-- <img class="title__mobile-foto main-foto" src="img/mobile-main-foto.jpg" alt="Team bdsl">
-  <img class="title__main-foto main-foto" src="img/main-foto.jpg" alt="Team bdsl"> -->
-<!-- <a href="#" class="modall-btn">ЗАПИСАТИСЯ</a> -->

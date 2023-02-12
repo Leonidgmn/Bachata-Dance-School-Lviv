@@ -6,7 +6,7 @@
 
 .address__wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .title__select {
@@ -20,7 +20,7 @@
 }
 
 .address__item {
-  height: 150px;
+  min-height: 150px;
   margin: 10px;
   width: 100%;
   z-index: 1;
@@ -47,7 +47,7 @@
 
 .dance-name__wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .dance-item{
@@ -112,13 +112,9 @@
     display: flex;
 }
 
-/* .level{
-    margin-left: 10px;
-}
-
 .dance-name{
-    margin-left: 10px;
-} */
+    text-align: center;
+}
 .location__place{
     margin-left: 10px;
 }
@@ -143,4 +139,22 @@
     background-color: purple;
 }
 
+
+@media (min-width: 768px) {
+    .location__place {
+        margin-left: 0px;
+    }
+
+
+    .address__item{
+        width: 200px;
+    }
+}
+
+@media (min-width: 991px) {
+
+    .address__item{
+        width: 250px;
+    }
+}
 
