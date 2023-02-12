@@ -139,6 +139,13 @@
     background-color: purple;
 }
 
+.wrapper__button {
+    display: flex;
+}
+.button__add__classes {
+    margin: 20px;
+}
+
 
 @media (min-width: 768px) {
     .location__place {
