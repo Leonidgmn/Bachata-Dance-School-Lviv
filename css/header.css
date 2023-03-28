@@ -3,7 +3,6 @@
   body.lock {
     overflow: hidden;
   }
-
   .logo__img {
     max-width: 100px;
     border-radius: 50%;
@@ -34,7 +33,7 @@
     cursor: pointer;
     z-index: 5;
   }
-  
+
   section div nav .navigation-burger span,
   section div nav .navigation-burger::before,
   section div nav .navigation-burger::after {
