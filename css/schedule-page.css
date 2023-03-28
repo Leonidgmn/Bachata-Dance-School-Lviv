@@ -31,7 +31,7 @@
 }
 
 .address__item.first {
-  background-image: url(../img/location.jpg);
+  /* background-image: url(../img/location.jpg); */
   background-size: cover;
 }
 
